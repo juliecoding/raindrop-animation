@@ -1,0 +1,27 @@
+body {
+  background-color: #091A42;
+}
+
+.teardrop {
+  position: fixed;
+  width: 50px;
+  viewbox: 0 0 30 42;
+  animation-name: rainfall;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+.teardrop path {
+  fill: lightblue;
+  stroke: white;
+  stroke-width: '1';
+}
+@keyframes rainfall {
+  from {
+    top: 0px;
+    opacity: .01;
+  }
+  to {
+    top: 400px;
+    opacity: .9;
+  }
+}
